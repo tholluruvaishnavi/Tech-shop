@@ -85,7 +85,7 @@ function ProductCard({ product }) {
         ))}
         <span className="text-sm text-gray-400">({product.rateCount})</span>
       </div>
-<div>g</div>
+<div>svbdb</div>
       {/* Add to Cart button */}
       <button
         onClick={(e) => {
