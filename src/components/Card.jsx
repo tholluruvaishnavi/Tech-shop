@@ -77,16 +77,14 @@ function ProductCard({ product }) {
       <p className="text-white">{product.info}</p>
       <p className="font-bold text-white">₹{product.finalPrice}</p>
       <p className="line-through text-white text-sm">₹{product.originalPrice}</p>
-
+<div></div>
       {/* Rating */}
       <div className="flex items-center gap-1 mt-2">
         {Array.from({ length: Math.round(product.rateCount || 0) }).map((_, i) => (
           <FaStar key={i} style={{ color: "red" }} />
         ))}
         <span className="text-sm text-gray-400">({product.rateCount})</span>
-      </div>
-
-      {/* Add to Cart button */}
+      </div>   {/* Add to Cart button */}
       <button
         onClick={(e) => {
           e.preventDefault();
